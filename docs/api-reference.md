@@ -58,11 +58,11 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 
 ----------
 
-<a name="component-reference"></a>
+<a name="reference"></a>
 
-## Component Reference
+## Reference
 
-This is an alphabetical list of all the components that are part of React Router.
+This is an alphabetical list of all components, hooks, and other methods that are part of React Router. APIs that are specific to building web apps are contained in the `react-router-dom` package, while React Native APIs are contained in the `react-router-native` package. Both packages re-export the entire core library, so you only ever need to install one of them.
 
 > [!Note:]
 >

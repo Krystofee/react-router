@@ -68,7 +68,8 @@ This is an alphabetical list of all components, hooks, and other methods that ar
 >
 > You should only ever `import` from one React Router package. If you're making
 > a web app, you should import everything from `react-router-dom`. Otherwise, if
-> you're making a React Native app, import from `react-router-native`.
+> you're making a React Native app, import from `react-router-native`. You never
+> need to import anything from `react-router`.
 
 <a name="browserrouter"></a>
 

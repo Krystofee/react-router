@@ -74,18 +74,17 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 </BrowserRouter>
 ```
 
-A `<BrowserRouter>` may have the following props:
-
-- `children` - 
-- `window` - 
-
-Unlike [`<HashRouter>`](#hashrouter)
-
-It uses clean URLs in the address bar. We say the URLs are "clean" because, unlike [`<HashRouter>`](#hashrouter) they don't begin with a `#`. This is the recommended
-
 <a name="hashrouter"></a>
 
 ### `<HashRouter>`
+
+`<HashRouter>` is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason. This may happen in some shared hosting scenarios where you do not have full control over the server. In these situations, `<HashRouter>` makes it possible to store the current location in the `hash` portion of the current URL, so it is never sent to the server.
+
+```tsx
+<HashRouter>
+  {/* The rest of your app goes here */}
+</HashRouter>
+```
 
 
 ###########################

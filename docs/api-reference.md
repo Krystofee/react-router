@@ -68,7 +68,7 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 
 `<BrowserRouter>` is the recommended interface for running React Router in a web browser. A `<BrowserRouter>` stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
 
-```ts
+```tsx
 <BrowserRouter>
   {/* The rest of your app goes here */}
 </BrowserRouter>

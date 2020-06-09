@@ -74,7 +74,6 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 </BrowserRouter>
 ```
 
-
 <a name="hashrouter"></a>
 
 ### `<HashRouter>`

@@ -27,7 +27,7 @@ These routers provide the context that React Router needs to operate in a partic
 
 ### Routing
 
-The process of "routing" involves deciding which React elements will be rendered on a given page of your app, and how they will be nested. React Router provides two interfaces for declaring your routes.
+The process of "routing" is simply deciding which React elements will be rendered on a given page of your app, and how they will be nested. React Router provides two interfaces for declaring your routes.
 
 - [`<Routes>` and `<Route>`](#routes-and-route) if you're using JSX
 - [`useRoutes`](#useroutes) if you'd prefer a JavaScript object-based config
@@ -36,7 +36,10 @@ The process of "routing" involves deciding which React elements will be rendered
 
 ### Navigation
 
+There are two main interfaces for navigating between pages in your app, depending on what you need.
 
+- [`<Link>` and `<NavLink>`](#link-and-navlink) render an accessible `<a>` element, or a `TouchableHighlight` on React Native. This lets the user initiate navigation by clicking or tapping a visible element on the page.
+- [`useNavigate` and `<Navigate>`](#usenavigate-and-navigate) let you programmatically navigate, usually in response to some change in state
 
 At the root of any React Router app is a `<Router>` element.
 

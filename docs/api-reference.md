@@ -54,6 +54,38 @@ Sometimes you need to confirm navigation before it actually happens. For example
 
 ### Search Parameters
 
+Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams) is provided via [the `useSearchParams` hook](#usesearchparams).
+
+----------
+
+<a name="reference"></a>
+
+## Reference
+
+<a name="browserrouter"></a>
+
+### `<BrowserRouter>`
+
+`<BrowserRouter>` is the recommended interface for running React Router in a web browser. A `<BrowserRouter>` stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
+
+```ts
+<BrowserRouter>
+  {/* The rest of your app goes here */}
+</BrowserRouter>
+```
+
+A `<BrowserRouter>` may have the following props:
+
+- `children` - 
+- `window` - 
+
+Unlike [`<HashRouter>`](#hashrouter)
+
+It uses clean URLs in the address bar. We say the URLs are "clean" because, unlike [`<HashRouter>`](#hashrouter) they don't begin with a `#`. This is the recommended
+
+<a name="hashrouter"></a>
+
+### `<HashRouter>`
 
 
 ###########################

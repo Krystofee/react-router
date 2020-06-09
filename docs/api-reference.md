@@ -58,9 +58,9 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 
 ----------
 
-<a name="reference"></a>
+<a name="component-reference"></a>
 
-## Reference
+## Component Reference
 
 <a name="browserrouter"></a>
 
@@ -69,9 +69,16 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 `<BrowserRouter>` is the recommended interface for running React Router in a web browser. A `<BrowserRouter>` stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
 
 ```tsx
-<BrowserRouter>
-  {/* The rest of your app goes here */}
-</BrowserRouter>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDOM.render(
+  <BrowserRouter>
+    {/* The rest of your app goes here */}
+  </BrowserRouter>,
+  root
+);
 ```
 
 <a name="hashrouter"></a>
@@ -86,6 +93,11 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 </HashRouter>
 ```
 
+<a name="nativerouter"></a>
+
+### `<NativeRouter>`
+
+`<NativeRouter>` is the recommended interface for running React Router in a [React Native](https://reactnative.dev) app.
 
 ###########################
 

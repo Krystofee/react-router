@@ -2,21 +2,47 @@
 
 # React Router API Reference
 
-This is the comprehensive API reference for React Router.
+React Router is a collection of [React components](https://reactjs.org/docs/components-and-props.html) and [hooks](#https://reactjs.org/docs/hooks-intro.html) that make it easy to build multi-page applications with [React](https://reactjs.org). If you [installed](./installation) React Router as a global (using a `<script>` tag), you can find the library on the `window.ReactRouterDOM` object. If you installed it from npm, you can simply `import` the pieces you need.
 
-The components, hooks, and utilities in this reference fall into a few major categories, grouped by purpose:
+<a name="overview"></a>
 
-- Setup
-  - `<BrowserRouter>`, `<HashRouter>`, and `<NativeRouter>`
-  - `<MemoryRouter>`
-  - `<StaticRouter>` (for server rendering)
-- Routing
-  - `<Routes>` and `<Route>`
-  - `useRoutes`
-- Navigation
-  - `<Link>`
-  - `useNavigate`
-  - `<Navigate>`
+## Overview
+
+The various components, hooks, and methods in the React Router API fall into a few major categories, grouped by purpose.
+
+<a name="setup"></a>
+
+### Setup
+
+To get React Router working in your app, you need to render a `<Router>` element at or near the root of your element tree. We provide several different routers, depending on where you're running React Router.
+
+- [`<BrowserRouter>`](#browserrouter) or [`<HashRouter>`](#hashrouter) should be used when running in a web browser. Which one you pick depends on the style of URL you prefer or need.
+- [`<StaticRouter>`](#staticrouter) should be used when server-rendering a website
+- [`<NativeRouter>`](#nativerouter) should be used in [React Native](https://reactnative.dev/) apps
+- [`<MemoryRouter>`](#memoryrouter) is useful in testing scenarios and as a reference implementation for the other routers
+
+These routers provide the context that React Router needs to operate in a particular environment. Each one renders [a `<Router>`](#router) internally, which you may also do if you need more fine-grained control for some reason. But it is highly likely that one of the built-in routers is what you need.
+
+<a name="routing"></a>
+
+### Routing
+
+The process of "routing" involves deciding which React elements will be rendered on a given page of your app, and how they will be nested. React Router provides two interfaces for declaring your routes.
+
+- [`<Routes>` and `<Route>`](#routes-and-route) if you're using JSX
+- [`useRoutes`](#useroutes) if you'd prefer a JavaScript object-based config
+
+<a name="navigation"></a>
+
+### Navigation
+
+
+
+At the root of any React Router app is a `<Router>` element.
+
+- [Setup](#setup)
+- [Routing](#routing)
+- [Navigation](#navigation)
 
 <a name="overview"></a>
 

@@ -41,15 +41,13 @@ There are two main interfaces for navigating between pages in your app, dependin
 - [`<Link>` and `<NavLink>`](#link-and-navlink) render an accessible `<a>` element, or a `TouchableHighlight` on React Native. This lets the user initiate navigation by clicking or tapping a visible element on the page.
 - [`useNavigate` and `<Navigate>`](#usenavigate-and-navigate) let you programmatically navigate, usually in response to some change in state
 
-At the root of any React Router app is a `<Router>` element.
+<a name="blocking"></a>
 
-- [Setup](#setup)
-- [Routing](#routing)
-- [Navigation](#navigation)
+### Blocking
 
-<a name="overview"></a>
 
-## Overview
+
+###########################
 
 React Router adds "routing" capabilities to React. But what is routing, anyway?
 

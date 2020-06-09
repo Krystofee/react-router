@@ -62,6 +62,14 @@ Access to the URL [search parameters](https://developer.mozilla.org/en-US/docs/W
 
 ## Component Reference
 
+This is an alphabetical list of all the components that are part of React Router.
+
+> [!Note:]
+>
+> You should only ever `import` from one React Router package. If you're making
+> a web app, you should import everything from `react-router-dom`. Otherwise, if
+> you're making a React Native app, import from `react-router-native`.
+
 <a name="browserrouter"></a>
 
 ### `<BrowserRouter>`
@@ -105,6 +113,19 @@ ReactDOM.render(
 ### `<NativeRouter>`
 
 `<NativeRouter>` is the recommended interface for running React Router in a [React Native](https://reactnative.dev) app.
+
+```tsx
+import React from 'react';
+import { NativeRouter } from 'react-router-native';
+
+function App() {
+  return (
+    <NativeRouter>
+      {/* The rest of your app goes here */}
+    </NativeRouter>
+  );
+}
+```
 
 ###########################
 

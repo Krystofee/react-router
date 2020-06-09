@@ -36,7 +36,7 @@ The process of "routing" is simply deciding which React elements will be rendere
 
 ### Navigation
 
-React Router's navigation interfaces let you change the current page. There are two main interfaces for navigating between pages in your app, depending on what you need.
+React Router's navigation interfaces let you change the currently rendered page by modifying the current location. There are two main interfaces for navigating between pages in your app, depending on what you need.
 
 - [`<Link>` and `<NavLink>`](#link-and-navlink) render an accessible `<a>` element, or a `TouchableHighlight` on React Native. This lets the user initiate navigation by clicking or tapping an element on the page.
 - [`useNavigate` and `<Navigate>`](#usenavigate-and-navigate) let you programmatically navigate, usually in response to some change in state
@@ -49,6 +49,12 @@ Sometimes you need to confirm navigation before it actually happens. For example
 
 - [`usePrompt` and `<Prompt>`](#useprompt-and-prompt) trigger a platform-native confirmation prompt when the user tries to navigate away from the current page
 - [`useBlocker`](#useblocker) is a low-level interface that lets you keep the user on the same page and execute a function that will be called when they try to navigate away
+
+<a name="search-parameters"></a>
+
+### Search Parameters
+
+
 
 ###########################
 

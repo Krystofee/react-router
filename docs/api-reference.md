@@ -88,9 +88,16 @@ ReactDOM.render(
 `<HashRouter>` is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason. This may happen in some shared hosting scenarios where you do not have full control over the server. In these situations, `<HashRouter>` makes it possible to store the current location in the `hash` portion of the current URL, so it is never sent to the server.
 
 ```tsx
-<HashRouter>
-  {/* The rest of your app goes here */}
-</HashRouter>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+
+ReactDOM.render(
+  <HashRouter>
+    {/* The rest of your app goes here */}
+  </HashRouter>,
+  root
+);
 ```
 
 <a name="nativerouter"></a>

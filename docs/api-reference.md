@@ -1,7 +1,5 @@
 <a name="top"></a>
 
-asdf
-
 # React Router API Reference
 
 React Router is a collection of [React components](https://reactjs.org/docs/components-and-props.html) and [hooks](#https://reactjs.org/docs/hooks-intro.html) that make it easy to build multi-page applications with [React](https://reactjs.org). If you [installed](./installation) React Router as a global (using a `<script>` tag), you can find the library on the `window.ReactRouterDOM` object. If you installed it from npm, you can simply `import` the pieces you need.
@@ -16,7 +14,7 @@ The various components, hooks, and methods in the React Router API fall into a f
 
 ### Setup
 
-To get React Router working in your app, you need to render a `<Router>` element at or near the root of your element tree. We provide several different routers, depending on where you're running React Router.
+To get React Router working in your app, you need to render a `<Router>` element at or near the root of your element tree. We provide several different routers, depending on where you're running your app.
 
 - [`<BrowserRouter>`](#browserrouter) or [`<HashRouter>`](#hashrouter) should be used when running in a web browser. Which one you pick depends on the style of URL you prefer or need.
 - [`<StaticRouter>`](#staticrouter) should be used when server-rendering a website

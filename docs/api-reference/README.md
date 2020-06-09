@@ -6,9 +6,6 @@ This is the comprehensive API reference for React Router.
 
 The components, hooks, and utilities in this reference fall into a few major categories, grouped by purpose:
 
-```ts
-```
-
 - Setup
   - `<BrowserRouter>`, `<HashRouter>`, and `<NativeRouter>`
   - `<MemoryRouter>`
